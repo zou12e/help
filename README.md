@@ -21,7 +21,7 @@ deb-src http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted unive
 
 4. sudo apt-get upgrade
 ```
-
+***
 ### Ubuntu操作
 ```
 1. 安装dpkg包
@@ -39,18 +39,18 @@ sudo apt-get install shadowsocks-qt5
 5.补全终端提示
 sudo apt-get install ohmyzsh
 ```
-
+***
 ### vi操作
 ```
 1. 使用vi (上下左右ABCD)
 export TERM=linux
 ```
-
+***
 ### 配置HOST
 ```
 sudo vi /etc/hosts
 ```
-
+***
 ### 设置npm源
 ```
 1. 设置npm源
@@ -59,7 +59,7 @@ npm config set registry https://registry.npm.taobao.org
 2. 查看npm源
 npm config get registry
 ```
-
+***
 ### ssh私钥相关问题
 ```
 ssh-keygen -t rsa -C "281933726@qq.com"
@@ -82,7 +82,7 @@ and the repository exists.
 eval "$(ssh-agent -s)"
 ssh-add
 ```
-
+***
 ### 错误码
 ```
 -- 错误
@@ -91,9 +91,8 @@ error An unexpected error occurred: "EACCES: permission denied, mkdir '/home/nod
 -- 文件夹权限不够
 ll node_modules/
 sudo rm -rf node_modules/
-
 ```
-
+***
 ### java环境变量
 ```
 1. 设置java环境变量
@@ -110,8 +109,7 @@ export PATH=${JAVA_HOME}/bin:$PATH
 2. 生效环境变量
 source ~/.bashrc 
 ```
-
-
+***
 ### commitizen
 ```
 1. 安装cz
@@ -131,6 +129,7 @@ b. package.json 中添加
 -- 删除分支
 git branch -d zou
 ```
+***
 ### eslint
 ```
 1. 添加eslint
