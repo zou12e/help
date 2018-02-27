@@ -155,10 +155,13 @@ module.exports = {
 3. 不需要检查
 .eslintignore
 ```
-
-
-
-
+***
+### nodejs升级
+```
+ npm  install  -g  n
+ 
+ n  8.0.0
+```
 
 
 
