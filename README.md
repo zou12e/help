@@ -49,6 +49,12 @@ export TERM=linux
 ### 配置HOST
 ```
 sudo vi /etc/hosts
+
+-- 更新nginx配置
+sudo nginx -s reload
+
+-- 查看日志
+pm2 log name --lines 1000
 ```
 ***
 ### 设置npm源
@@ -110,9 +116,9 @@ export PATH=${JAVA_HOME}/bin:$PATH
 source ~/.bashrc 
 ```
 ***
-### commitizen
+### git操作 
 ```
-1. 安装cz
+1. 安装cz （commitizen）
 git cz
 npm install -g commitizen
 
@@ -128,6 +134,31 @@ b. package.json 中添加
 
 -- 删除分支
 git branch -d zou
+
+
+-- 提交空文件
+空文件中加 .gitkeep
+
+
+-- 撤销git提交
+1. 去掉master保护
+Settings - Repository - Protected Branches
+
+2. git reset --hard [a4c08a87a4feb6a0968983add8376e10038da6a9] 回到提交版本
+
+3. git push origin master --force
+
+
+-- 添加标签
+1. git tag -a version -m "note"
+
+2. git push --tag
+
+3. git tag -d version
+
+4. git push origin :refs/tags/version
+
+
 ```
 ***
 ### eslint
