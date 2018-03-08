@@ -204,9 +204,30 @@ module.exports = {
  n  8.0.0
 ```
 
+***
+### nginx设置
+```
+
+vi /etc/nginx/conf.d/jeff.conf
+
+sudo nginx -s reload
 
 
+server {
+    listen       80;
+    server_name  www.zourunze.com;
+    proxy_buffering on;
+    add_header X-Cache-Status $upstream_cache_status;
 
+    location ^~ /react {
+        proxy_pass  http://localhost:7777;
+        proxy_set_header Host $host;
+        proxy_set_header Http-Host $http_host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header REMOTE-HOST $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+}
 
-
+```
 
