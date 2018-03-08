@@ -44,6 +44,16 @@ sudo apt-get install ohmyzsh
 ```
 1. 使用vi (上下左右ABCD)
 export TERM=linux
+
+步骤一，输入下述命令以卸载vim-tiny：
+sudo apt-get remove vim-common
+
+步骤二，输入下述命令以安装vim-full：
+sudo apt-get install vim
+
+现在在vi命令的编辑模式即可正常使用方向键和退格键。
+  
+  
 ```
 ***
 ### 配置HOST
