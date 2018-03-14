@@ -201,7 +201,11 @@ module.exports = {
 ```
  npm  install  -g  n
  
- n  8.0.0
+ - 指定版本
+ n  8.0.0 
+ 
+ - 最稳定版本
+ n  stable
 ```
 
 ***
