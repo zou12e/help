@@ -78,8 +78,11 @@ npm config get registry
 ***
 ### ssh私钥相关问题
 ```
+git config --global user.name "zou12e"
+git config --global user.email "281933726@qq.com"
+
 ssh-keygen -t rsa -C "281933726@qq.com"
-ssh-keygen -t rsa -C 'zou12e'
+ssh-keygen -t rsa -C "zou12e"
 
 cd ~/.ssh
 vi ~/.ssh/id_rsa.pub
