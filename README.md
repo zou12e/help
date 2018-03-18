@@ -60,9 +60,6 @@ sudo apt-get install vim
 ```
 sudo vi /etc/hosts
 
--- 更新nginx配置
-sudo nginx -s reload
-
 -- 查看日志
 pm2 log name --lines 1000
 ```
@@ -225,6 +222,9 @@ module.exports = {
  
  - 最稳定版本
  n  stable
+ 
+ - 退出终端重新连接测试
+ node -v
 ```
 
 ***
@@ -233,15 +233,16 @@ module.exports = {
 
 vi /etc/nginx/conf.d/jeff.conf
 
-sudo nginx -s reload
-
 
 server {
     listen       80;
     server_name  www.zourunze.com;
     proxy_buffering on;
     add_header X-Cache-Status $upstream_cache_status;
-
+    
+    # 静态文文件地址
+    host /opt/www/;
+    
     location ^~ /react {
         proxy_pass  http://localhost:7777;
         proxy_set_header Host $host;
@@ -251,6 +252,9 @@ server {
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
     }
 }
+
+-- 更新nginx配置
+sudo nginx -s reload
 
 ```
 
