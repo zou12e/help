@@ -258,3 +258,11 @@ sudo nginx -s reload
 
 ```
 
+***
+### nodejs orm框架
+```
+1. Sequelize 
+2. orm,orm2
+3. typeorm
+```
+
