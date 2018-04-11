@@ -38,6 +38,14 @@ sudo apt-get install shadowsocks-qt5
 
 5.补全终端提示
 sudo apt-get install ohmyzsh
+
+6. 打包
+--package.tgz 打包名称
+--path 位置
+
+tar -czvf  package.tgz  path   
+
+
 ```
 ***
 ### vi操作
