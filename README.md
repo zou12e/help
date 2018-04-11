@@ -264,6 +264,8 @@ server {
 -- 更新nginx配置
 sudo nginx -s reload
 
+-- 可以代理跨域的ajax请求
+
 ```
 
 ***
