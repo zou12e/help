@@ -46,6 +46,11 @@ sudo apt-get install ohmyzsh
 tar -czvf  package.tgz  path   
 
 
+7. 传文件
+-- scp
+scp a.txt root@192.168.1.222:/home/txt/
+
+
 ```
 ***
 ### vi操作
