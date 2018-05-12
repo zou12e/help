@@ -254,7 +254,7 @@ server {
     add_header X-Cache-Status $upstream_cache_status;
     
     # 静态文文件地址
-    host /opt/www/;
+    root /opt/www/;
     
     location ^~ /react {
         proxy_pass  http://localhost:7777;
