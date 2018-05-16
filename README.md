@@ -51,6 +51,15 @@ tar -czvf  package.tgz  path  
 scp a.txt root@192.168.1.222:/home/txt/
 
 
+8.查看端口使用
+netstat -ap | grep 4019
+
+-- 结果
+tcp6       0      0 [::]:4019               [::]:*                  LISTEN   12483/node
+
+-- 终止 （pid）
+kill -9 12483
+
 ```
 ***
 ### vi操作
