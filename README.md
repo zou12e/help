@@ -77,8 +77,23 @@ sudo apt-get remove vim-common
 sudo apt-get install vim
 
 现在在vi命令的编辑模式即可正常使用方向键和退格键。
-  
-  
+
+-- 设置 vi
+vi ~/.vimrc
+
+-- 设置行数
+syntax on
+set nu!
+
+-- 查找内容高亮
+set hlsearch
+
+-- 查找某行
+:150
+
+-- 查找字符
+/data
+  
 ```
 ***
 ### 配置HOST
