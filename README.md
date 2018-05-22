@@ -231,21 +231,43 @@ Settings - Repository - Protected Branches
 ```
 1. 添加eslint
 
-https://github.com/fmfe/eslint-config-fmfe-nodejs
-yarn add -D eslint @fmfe/eslint-config-fmfe-nodejs 
+"eslint": "^4.17.0",
+"eslint-config-standard": "^10.2.1",
+"eslint-plugin-import": "^2.7.0",
+"eslint-plugin-node": "^5.1.1",
+"eslint-plugin-promise": "^3.5.0",
+"eslint-plugin-standard": "^3.0.1",
 
 
 2. 配置文件
 .eslintrc.js
 
 module.exports = {
-    extends: '@fmfe/fmfe-nodejs',
-    // 所有规则http://eslint.org/docs/rules/
+    root: true,
+    extends: 'standard',
+    globals: {
+        describe: true,
+        context: true,
+        it: true,
+        specify: true,
+        before: true,
+        beforeEach: true,
+        after: true,
+        afterEach: true
+    },
     rules: {
+        // 行尾必须加分号
+        'semi': ['error', 'always'],
+        // 缩进使用 4 个空格
+        'indent': ['error', 4],
+        // 要求使用 let 或 const 而不是 var
+        'no-var': ['error'],
+        // 优先使用 const，其次才是 let
+        'prefer-const': ['error'],
         // 是否可以使用call或者apply
         'no-useless-call': ['off'],
         // 箭头函数参数仅有一个时，不需要加括号
-        'arrow-parens': ['error', 'as-needed' ]
+        'arrow-parens': ['error', 'as-needed']
     }
 };
 
@@ -297,6 +319,10 @@ server {
 sudo nginx -s reload
 
 -- 可以代理跨域的ajax请求
+
+-- wget403解决方案
+wget -r -U NoSuchBrowser/1.0 url
+wget -r -U 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101' url
 
 ```
 
