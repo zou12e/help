@@ -50,6 +50,8 @@ tar -czvf  package.tgz  path  
 -- scp
 scp a.txt root@192.168.1.222:/home/txt/
 
+scp -r w5258 root@121.42.137.146:/opt/www
+
 
 8.查看端口使用
 netstat -ap | grep 4019
