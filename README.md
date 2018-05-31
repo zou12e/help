@@ -95,7 +95,8 @@ set hlsearch
 
 -- 查找字符
 /data
-  
+
+确定后按 n 查找下一个
 ```
 ***
 ### 配置HOST
