@@ -166,6 +166,14 @@ error An unexpected error occurred: "EACCES: permission denied, mkdir '/home/nod
 -- 文件夹权限不够
 ll node_modules/
 sudo rm -rf node_modules/
+
+
+-- mongodb导入报错
+mongoimport -d dbname -c collename --file /Users/jeff/Downloads/collename.json
+
+Failed: error unmarshaling bytes on document #0: JSON decoder out of sync - data changing underfoot?
+
+报错原因是json文件一条数据是一个对象{}不需要，连接
 ```
 ***
 ### java环境变量
