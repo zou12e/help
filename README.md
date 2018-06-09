@@ -345,3 +345,12 @@ wget -r -U 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101' url
 3. typeorm
 ```
 
+
+***
+### mysql
+```
+客户端允许删除
+SET SQL_SAFE_UPDATES = 0
+```
+
+
