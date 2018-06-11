@@ -364,6 +364,8 @@ SET SQL_SAFE_UPDATES = 0
  2. 启动mongo
     mongod
  
+ 3. nginx
+    /usr/local/etc/nginx
 ```
 
 
