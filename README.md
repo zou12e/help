@@ -366,6 +366,9 @@ SET SQL_SAFE_UPDATES = 0
  
  3. nginx
     /usr/local/etc/nginx
+    
+   sudo nginx -c /usr/local/etc/nginx/nginx.conf
+   sudo nginx -s reload
 ```
 
 
