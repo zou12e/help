@@ -369,6 +369,13 @@ SET SQL_SAFE_UPDATES = 0
     
    sudo nginx -c /usr/local/etc/nginx/nginx.conf
    sudo nginx -s reload
+   
+ 4. 命令
+    查找
+    ps -ef | grep nginx 
+    lsof -i:3000
+    kill -9 pid | kill -9 nginx
+    
 ```
 
 
