@@ -354,3 +354,16 @@ SET SQL_SAFE_UPDATES = 0
 ```
 
 
+***
+### mac
+```
+ 1. 启动mysql
+    mysqld
+    mysql -u root -p
+ 
+ 2. 启动mongo
+    mongod
+ 
+```
+
+
