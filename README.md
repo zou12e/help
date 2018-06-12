@@ -236,7 +236,7 @@ Settings - Repository - Protected Branches
 4. git push origin :refs/tags/version
 
 
--- 修改commit
+-- 修改 commit message
 
 git commit --amend
 
