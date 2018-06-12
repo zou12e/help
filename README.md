@@ -355,8 +355,13 @@ wget -r -U 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:43.0) Gecko/20100101' url
 ***
 ### mysql
 ```
-客户端允许删除
+-- ubuntu安装
+sudo apt-get install mysql-server
+
+
+-- 客户端允许删除
 SET SQL_SAFE_UPDATES = 0
+
 ```
 
 
