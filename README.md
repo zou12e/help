@@ -376,6 +376,15 @@ SET SQL_SAFE_UPDATES = 0
     lsof -i:3000
     kill -9 pid | kill -9 nginx
     
+ 5. pem快捷登录
+ ～/.ssh/config
+ Host ci
+     Hostname 192.168.1.110
+     Port 22
+     User root
+     IdentityFile /Users/jeff/Documents/*.pem 
+ chmod 600 ~/Documents/*.pem
+    
 ```
 
 
