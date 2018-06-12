@@ -329,6 +329,12 @@ server {
 -- 更新nginx配置
 sudo nginx -s reload
 
+
+-- nginx默认上传有限制
+# 20m允许最大上传大小
+client_max_body_size 20m;
+        
+        
 -- 可以代理跨域的ajax请求
 
 -- wget403解决方案
