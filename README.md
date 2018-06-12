@@ -236,6 +236,11 @@ Settings - Repository - Protected Branches
 4. git push origin :refs/tags/version
 
 
+-- 修改commit
+
+git commit --amend
+
+
 ```
 ***
 ### eslint
