@@ -237,8 +237,10 @@ Settings - Repository - Protected Branches
 
 
 -- 修改 commit message
-
 git commit --amend
+
+-- 更新分支不主动merge
+git fetch
 
 
 ```
