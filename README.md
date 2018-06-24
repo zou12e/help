@@ -45,6 +45,9 @@ sudo apt-get install ohmyzsh
 
 tar -czvf  package.tgz  path   
 
+--解压zip
+unzip studio.zip
+
 
 7. 传文件
 -- scp
