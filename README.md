@@ -409,3 +409,45 @@ SET SQL_SAFE_UPDATES = 0
 ```
 
 
+***
+### docker 常用命令
+```
+-- 创建镜像
+docker pull ***
+
+-- 查看所有镜像 
+docker images
+
+-- 创建容器
+docker run -it alpine:latest /bin/sh
+docker run -it nginx:latest /bin/bash
+
+
+--查看所有容器
+docker ps -a
+
+--查看开启容器
+docker ps
+
+--启动/停止/重启
+docker start/stop/restart
+
+--进入容器 [d27bd3008ad9] id
+docker exec -it d27bd3008ad9 /bin/bash
+docker attach d27bd3008ad9  
+
+-- 停用全部运行中的容器
+docker stop $(docker ps -q)
+
+-- 删除全部容器
+docker rm $(docker ps -aq)
+
+
+
+
+
+
+
+
+```
+
