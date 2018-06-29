@@ -415,6 +415,27 @@ SET SQL_SAFE_UPDATES = 0
 -- 创建镜像
 docker pull ***
 
+-- 自定义
+Dockerfile
+FROM node:8.4
+COPY . /app
+WORKDIR /app
+RUN npm install --registry=https://registry.npm.taobao.org
+EXPOSE 3000
+
+docker image build -t name .
+
+docker container run -p 8000:3000 -it name /bin/bash
+
+-- 发布镜像
+docker login
+
+# docker image tag [imageName] [username]/[repository]:[tag]
+
+docker image tag name:0.0.1 zou/name:0.0.1
+
+
+
 -- 查看所有镜像 
 docker images
 
