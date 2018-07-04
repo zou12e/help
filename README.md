@@ -246,6 +246,26 @@ git commit --amend
 git fetch
 
 
+fork使用
+
+-- clone fork项目
+clone /FE/fork
+1. 添加主项目remote
+git remote add base 主项目url
+
+
+2. 主项目提交修改后同步主项目代码
+
+-- 更新主项目代码
+git fetch base
+
+-- 查看主项目更新的分支
+git brach -av
+
+-- 同步主项目代码
+git merge base/branch-name
+
+
 ```
 ***
 ### eslint
