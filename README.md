@@ -314,6 +314,9 @@ module.exports = {
 
 3. 不需要检查
 .eslintignore
+
+某行不需要检查
+// eslint-disable-line
 ```
 ***
 ### nodejs升级
