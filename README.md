@@ -70,14 +70,15 @@ kill -9 12483
 
 
 10.查看日志
--- 循环看最新的100行
+-- 最新的100行
 tail -f 100 app.log
 
 -- 查找error 分页
- cat -n app.log |grep "error" |more
- 
- -- 查找error 保存文件
- cat -n app.log |grep "error"  > error.txt
+cat -n app.log |grep "error" |more
+
+-- 查找error 保存文件
+cat -n app.log |grep "error"  > error.txt
+
 
 ```
 ***
