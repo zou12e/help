@@ -112,6 +112,9 @@ set hlsearch
 /data
 
 确定后按 n 查找下一个
+
+-- 主题
+oh-my-zsh
 ```
 ***
 ### 配置HOST
