@@ -84,7 +84,7 @@ cat -n app.log |grep "error"  > error.txt
 ```
 
 | 压缩包 | 压缩 | 解压 |
-|:-----:|:---:|:---:|
+|:-----|:---|:---|
 | .tar.gz和.tgz	| tar -czf jpg.tar.gz *.jpg	 | tar -xzvf filename -C path
 | .tar.bz2	    | tar -cjf jpg.tar.bz2 *.jpg  | tar -xjvf filename -C path
 | .tar.Z	    | tar -cZf jpg.tar.Z *.jpg	  | tar -xZvf filename -C path
