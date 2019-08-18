@@ -55,6 +55,17 @@ scp a.txt root@192.168.1.222:/home/txt/
 
 scp -r w5258 root@121.42.137.146:/opt/www
 
+    |--|压缩包	 |--|压缩	 |--|解压 |--|
+.tar.gz和.tgz	tar -czf jpg.tar.gz *.jpg	tar -xzvf filename -C path
+.tar.bz2	tar -cjf jpg.tar.bz2 *.jpg	tar -xjvf filename -C path
+.tar.Z	tar -cZf jpg.tar.Z *.jpg	tar -xZvf filename -C path
+.tar	tar -cvf jpg.tar *.jpg	tar -xvf filename -C path
+.gz	tar -czf jpg.tar.gz *.jpg	tar -xzvf filename -C path　　
+.bz2	bzip2 filename	bunzip2 -f filename
+.Z	compress filename	umcompress filename
+.zip	zip jpg.zip *.jpg	unzip -q filename -C path
+.rar	rar a jpg.rar *.jpg	rar x filename -C path
+
 
 8.查看端口使用
 netstat -ap | grep 4019
