@@ -93,7 +93,7 @@ cat -n app.log |grep "error"  > error.txt
 | .bz2	        | bzip2 filename	          | bunzip2 -f filename
 | .Z	        | compress filename	          | umcompress filename
 | .zip	        | zip jpg.zip *.jpg	          | unzip -q filename -C path
-| .rar	        |  rar a jpg.rar *.jpg	      | rar x filename -C path
+| .rar	        |  rar a jpg.rar *.jpg	      | unrar x filename -C path
 
 
 
